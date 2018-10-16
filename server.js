@@ -50,4 +50,4 @@ app.get('/profile/:id',(req,res)=>{getId.handleGetId(postgres,req,res)});
 app.put('/image',(req,res)=>{image.handleImage(postgres, bcrypt, req, res)});
 
 
-app.listen(process.env.PORT || 3000,()=>console.log(`Process running on ${process.env.PORT}`));
+app.listen(process.env.PORT || 3000,'0.0.0.0',()=>console.log(`Process running on ${process.env.PORT}`));
