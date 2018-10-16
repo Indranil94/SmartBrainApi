@@ -50,4 +50,4 @@ app.get('/profile/:id',(req,res)=>{getId.handleGetId(postgres,req,res)});
 app.put('/image',(req,res)=>{image.handleImage(postgres, bcrypt, req, res)});
 
 
-app.listen(3500);
+app.listen(process.env.PORT || 3000);
