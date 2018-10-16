@@ -26,7 +26,7 @@ const postgres = knex({
 
 
 app.get('/',(req,res)=>{
-	console.log('working');
+	res.json("At home page");
 })
 
 app.post('/api',(req,res)=>{api.handleApi(req,res)});
