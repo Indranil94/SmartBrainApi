@@ -14,15 +14,16 @@ app.use(cors());
 
 app.use(bodyParser.json());
 const postgres = knex({
-	/*client: 'pg',
+	client: 'pg',
 	connection: {
-		host: '127.0.0.1',
+		/*host: '127.0.0.1',
 		user: 'postgres',
 		password: 'Manu#9717',
-		database: 'SmartBrain'
-	}*/
-	connectionString: process.env.DATABASE_URL,
-  	ssl: true,
+		database: 'SmartBrain'*/
+		connectionString: process.env.DATABASE_URL,
+  		ssl: true,
+	}
+	
 });
 
 
