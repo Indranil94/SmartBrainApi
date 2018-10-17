@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const bcrypt = require('./npm/npm-bcrpypt/bcrypt');
+const bcrypt = require('./npm/npm-bcrpypt/node-modules/bcrypt/bcrypt.js');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const knex = require('knex');
