@@ -8,7 +8,7 @@ const api = require('./controllers/api');
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const getId = require('./controllers/getId');
-const image =  require('./controllers/image')
+const image = require('./controllers/image');
 
 app.use(cors());
 
